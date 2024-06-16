@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 // Route untuk menampilkan halaman daftar tugas
 Route::get('/tasks', [Taskcontroller::class, 'index']);
+
+Route::get('/tasks/list', [Taskcontroller::class, 'list']);

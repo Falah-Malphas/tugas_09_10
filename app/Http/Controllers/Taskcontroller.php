@@ -28,4 +28,10 @@ class Taskcontroller extends Controller
         $tasks = Task::findOrFail($id);
         return view('tasks.show', compact('task'));
     }
+
+    public function list(){
+        $tasks = Task::all();
+
+        return view('task.list', compact('tasks'));
+    }
 }
